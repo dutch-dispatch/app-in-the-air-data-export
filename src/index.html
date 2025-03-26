@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App in the Air - Data Explorer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-router@3.5.3/dist/vue-router.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+  <link rel="stylesheet" href="assets/css/flight-view.css">
+  <style>
+    .nav-tabs .nav-link {
+      cursor: pointer;
+    }
+    .table-container {
+      margin-top: 20px;
+      overflow-x: auto;
+    }
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" class="container mt-4">
+    <h1 class="mb-4">App in the Air - Data Explorer</h1>
+    <div>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <router-link to="/flights" class="nav-link" active-class="active">Flights</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/statistics" class="nav-link" active-class="active">Statistics</router-link>
+        </li>
+      </ul>
+      <router-view></router-view>
+    </div>
+  </div>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+  <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>

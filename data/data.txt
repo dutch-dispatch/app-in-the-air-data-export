@@ -1,0 +1,24 @@
+user: 00000000000000000000
+subscribers:
+
+devices:
+
+iPhone14,2;aita;ios;1.1.1;NL;2016-01-01 01:01:01;2024-01-01 01:01:01.852119
+accounts:
+settings:
+country: NL
+currency: EUR
+work: 
+full name: You Name 
+display email: your@email.com
+emails parsing: []
+
+trips:
+Ownership.MINE;2011-11-11T11:11:00;2011-11-11T21:11:11;LIS;AMS;2011-11-11T20:05:28.520890;2022-10-26T09:52:40.976703;None
+flights:
+None;None;None;None;None;None;search;HV;5952;73H;LIS;AMS;2011-11-11T18:25:00;2011-11-11T21:20:00;2011-11-11T19:25:00;2011-11-11T23:20:00;2011-11-11T20:05:28
+hotels:
+
+rental cars:
+
+expenses:
